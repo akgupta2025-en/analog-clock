@@ -8,8 +8,8 @@ screen.setup(width=600, height=600)
 screen.title("Analog Clock")
 
 clock = turtle.Turtle()
-clock.speed(0)
-clock.hideturtle()
+clock.speed(10)
+# clock.hideturtle()
 clock.pensize(3)
 
 clock.penup()
@@ -19,7 +19,7 @@ clock.circle(250)
 
 
 for number in range(1, 13):
-    angle = math.radians(number * 30 - 90)
+    angle = math.radians(90 -number * 30 )
 
     x = 200 * math.cos(angle)
     y = 200 * math.sin(angle)
